@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <section id="todo-container">
+
+            <h1 id="todo-header">My Todo List for Today: </h1>
+            <ul id="todo-list">
+                <li id="list-item">daat brush</li>
+            </ul>
+
+            <div id="input-data-container">
+                <textarea name="" id="input-area" cols="30" rows="10"></textarea>
+                <button id="input-btn">Enter</button>
+            </div>
+            
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        const todoContainer = document.getElementById("todo-container");
+        const todoList = document.getElementById("todo-list");
+        const inputBtn = document.getElementById("input-btn");
+        const inputArea = document.getElementById("input-area");
+
+        // input data
+
+        inputBtn.addEventListener("click",function(){
+            const li = document.createElement("li");
+            li.innerText = inputArea.value;
+            todoList.appendChild(li);
+        })
+
+        
+        
+
+    </script>
+</body>
+</html>

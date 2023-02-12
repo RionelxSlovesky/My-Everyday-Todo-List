@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsalmon;
+    min-height: 100vh;
+
+}
+
+#todo-list {
+    margin-bottom: 100px;
+}
+
+#input-area {
+    width: 200px;
+    height: 100px;
+}
+
+#input-data-container {
+    display: flex;
+    flex-direction: column;
+}
