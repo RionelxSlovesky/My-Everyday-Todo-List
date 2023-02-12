@@ -47,8 +47,11 @@
             todoList.appendChild(li);
         })
 
-        
-        
+        // delete item
+
+        todoList.addEventListener("click", function(event){
+            todoList.removeChild(event.target);
+        })
 
     </script>
 </body>
