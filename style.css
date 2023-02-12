@@ -17,12 +17,24 @@
     margin-bottom: 100px;
 }
 
-#input-area {
-    width: 200px;
-    height: 100px;
-}
-
 #input-data-container {
     display: flex;
     flex-direction: column;
+}
+
+#input-area {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+#input-btn {
+    height: 30px;
+    background-color: burlywood;
+}
+
+#input-btn:hover {
+    cursor: pointer;
+    background-color: rgb(206, 150, 76);
 }
