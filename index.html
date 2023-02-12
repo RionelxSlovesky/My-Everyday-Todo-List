@@ -16,9 +16,9 @@
         <section id="todo-container">
 
             <h1 id="todo-header">My Todo List for Today: </h1>
-            <ul id="todo-list">
-                <li id="list-item">daat brush</li>
-            </ul>
+            <ol id="todo-list">
+                <li class="list-item">daat brush</li>
+            </ol>
 
             <div id="input-data-container">
                 <textarea name="" id="input-area" cols="30" rows="10"></textarea>
@@ -43,9 +43,13 @@
 
         inputBtn.addEventListener("click",function(){
             const li = document.createElement("li");
-            li.innerText = inputArea.value;
-            todoList.appendChild(li);
-            inputArea.value = ''
+            li.classList.add('list-item');
+            if(inputArea.value!=''){
+                li.innerText = inputArea.value;
+                todoList.appendChild(li);
+                inputArea.value = ''
+            }
+            
         })
 
         // delete item
